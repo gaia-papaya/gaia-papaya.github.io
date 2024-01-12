@@ -1,3 +1,25 @@
+.topimage {
+    width: 1000px;
+}
+/* tab headers*/
+ h3 {
+    float: left;
+    background-color: inherit;
+    text-align: center;
+    font-size: 32px;
+    padding: 10px 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p {
+    float: left;
+    background-color: inherit;
+    text-align: center;
+    font-size: 24px;
+    padding: 10px 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
 .topnav {
     background-color: #180a15;
     overflow: hidden;
@@ -7,8 +29,8 @@
     float: left;
     display: block;
     text-align: center;
-    padding: 12px 16px;
-    font-size: 25px;
+    padding: 25px 70px;
+    font-size: 45px;
     color: rgb(238, 176, 247);
     text-decoration: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -20,6 +42,7 @@
     text-align: center;
     background-color: rgb(238, 176, 247);
     color: hsl(312, 43%, 16%);
+    transition: 0.5s;
 }
 
 .topnav a:hover {
@@ -28,38 +51,52 @@
     text-align: center;
     background-color: rgb(238, 176, 247);
     color: hsl(312, 43%, 16%);
+    transition: 0.5s;
 }
 
 .tabs {
-    background-color: hsl(312, 43%, 16%);
+    float: none;
+    overflow: hidden;
+    
 
 }
 
 .tabs button {
+    border-top-right-radius: 10%;
+    border-top-left-radius: 10%;
     float: left;
     display: block;
     text-align: center;
-    font-size: 18px;
+    font-size: 28px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 12px 16px;
-    color: rgb(238, 176, 247);
-    background-color: #3f2139;
+    background-color: rgb(238, 176, 247);
+    color: #180a15;
+    border-bottom-color: none;
+    transition: 0.5s;
 }
 
 .tabs button.active {
     float: left;
-    display: block;
-    text-align: center;
-    background-color: rgb(238, 176, 247);
-    color: hsl(312, 43%, 16%);
+    color: rgb(238, 176, 247);
+    background-color: #180a15;
 }
 
 .tabs button:hover {
     float: left;
     display: block;
     text-align: center;
-    background-color: rgb(238, 176, 247);
-    color: hsl(312, 43%, 16%);
+    color: rgb(238, 176, 247);
+    background-color: #180a15;
+}
+
+.tabcontent {
+    display: none;
+    overflow: hidden;
+    padding: 6px 10px;
+    border: 1px solid rgb(238, 176, 247);
+    background-color: #180a15;
+    ;
 }
 
 html {

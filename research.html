@@ -1,0 +1,47 @@
+<html>
+    <!--style and code ref-->
+    <head> <link rel="stylesheet" href="styles.css">
+        <script src="movingparts.js"></script>
+     </head>
+    <!--header image-->
+    <img class= "topimage" src="EasternEyedClickBeetle.jpg">
+    <!--top navigation bar-->
+    <div class="topnav">
+        <a href="index.html" >About Me</a>
+        <a href="research.html" class="active"> Research Interests</a>
+        <a href="SciComm.html"> Science Communication</a>
+        <a href="Contact.html"> Contact</a>
+    </div>
+    <br>
+    
+    <!--specific topic tabs-->
+    <div class="tabs">
+        <button class="tablink" type="button" onclick="TabFlipper(event,'Bugs')"> Bugs </button>
+        <button class="tablink" type="button" onclick="TabFlipper(event,'ThermalEcol')"> Thermal Ecology </button>
+        <button class="tablink" type="button" onclick="TabFlipper(event,'UrbanEcosys')"> Urban Ecosystems </button>
+        <button class="tablink" type="button" onclick="TabFlipper(event,'EcoInfo')"> Eco-Informatics </button>
+    </div>
+    
+    <!--tab contents-->
+    <div id="Bugs" class = "tabcontent">
+        <h3>creepy crawlies!</h3>
+        <p>aaaaagh! scaaarryyyy!</p>
+    </div>
+
+    <div id="ThermalEcol" class = "tabcontent">
+        <h3>Hot n Sweaty</h3>
+        <p>~ooh yeaahh </p>
+    </div>
+
+    <div id="UrbanEcosys" class = "tabcontent">
+        <h3>Life in the City</h3>
+        <p>Neww yoooooork</p>
+    </div>
+
+    <div id="EcoInfo" class = "tabcontent">
+        <h3>beep boop</h3>
+        <p>hello world! 10010 00101 </p>
+    </div>
+        
+
+</html>
