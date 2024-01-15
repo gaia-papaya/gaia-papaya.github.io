@@ -5,35 +5,43 @@
 
 .column {
     flex: 33.33%;
-    padding: 10px;
+    padding: 0px;
 }
 
 .topimage  {
+    float: left;
     display: none;
     position: relative;
     top: 0%;
     max-height: 600px;
     z-index: 0;
     animation-name: appear;
-    animation-duration: .75s;
+    animation-duration: 1.25s;
     animation-timing-function: ease-out;
 }
 
 @keyframes appear {
-    from {transform: rotateX(450deg); opacity: 0%;}
-    to {transform: rotateX(0deg); opacity: 100%;}
+    from {transform: translateY(100px); opacity: 0%;}
+    to {transform: translateY(1px); opacity: 100%;}
 }
 
 .headshot {
     max-height: 25%;
-    align-self: center;
+    float: right;
+    padding-right: 25px;
     position: relative;
-    left: 666px;
     max-width: 500px;
 }
 
+h1 {
+    color: rgb(238, 176, 247);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 55px;
+    text-align: center;
+}
+
 /* tab headers*/
- h3 {
+  h3 {
     float: left;
     background-color: inherit;
     text-align: center;
@@ -56,7 +64,8 @@ p {
 }
 
 .permaBox {
-    display: block;
+    display: flex;
+    justify-content: center;
     float: left;
     text-align: center;
     width: 66.6%;
@@ -111,10 +120,10 @@ margin-top: 2.5%;
 
 /*  topic tabs */
 .tabs {
+    display: flex;
     clear: left;
     text-align: center;
-    padding-left: 12px;
-    float: left;
+    float: none;
     overflow: hidden;
     position: relative;
     z-index: 3;
@@ -123,36 +132,28 @@ margin-top: 2.5%;
 
 
 .tabs button {
-    border-top-right-radius: 33.3%;
-    border-top-left-radius: 33.3%;
-    min-height: 50%;
-    float: left;
-    display: block;
+    display: inline-block;
+    justify-content: center;
+    float:none;
     text-align: center;
     font-size: 28px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding: 12px 22px;
     background-color: #6eff8d;
     color: #011405;
+    border: none;
     transition: 0.333s;
     z-index: 1;
 }
 
 .tabs button.active {
-    float: left;
-    background-color: rgba(1, 24, 6, 1);
+    background-color: rgb(2, 36, 9);
     color: rgb(238, 176, 247);
-    border: 1px solid #6eff8d;
-    border-bottom-color: #011405;
 }
 
 .tabs button:hover {
-    float: left;
-    display: block;
-    text-align: center;
     background-color: rgba(3, 70, 18, 0.966);
     color: rgb(226, 117, 243);
-    border: 1px solid #6eff8d41;
     border-bottom-color: #011405;
 }
 
@@ -160,18 +161,17 @@ margin-top: 2.5%;
     clear: left;
     position: relative;
     float: left;
-    width: 66.6%;
+    width: 100%;
     z-index: 2;
     display: none;
     overflow: hidden;
     padding: 12px;
     color: rgb(238, 176, 247);
-    border: 1px solid #6eff8d;
-    background-color: #011405;
+    background-color: rgb(2, 36, 9);
 
 }
 
 html {
-    background-color: rgb(12, 12, 12);
+    background-color: rgb(14, 10, 13);
 }
 
