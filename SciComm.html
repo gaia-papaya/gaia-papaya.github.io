@@ -4,40 +4,64 @@
         <script  src="movingparts.js"></script>
     </head>
    
-    <!--top navigation bar-->
-    <div class="topnav">
-        <a href="index.html" >About Me</a>
-        <a href="research.html"> Research Interests</a>
-        <a href="SciComm.html"class="active" > Science Communication</a>
-        <a href="Contact.html"> Contact</a>
-        <h1></h1>
+    <header class="topbar">
+        <!--top navigation bar-->
+   <div class="topnav">
+       <a href="index.html" >About Me</a>
+       <a href="research.html">Research</a>
+       <a href="SciComm.html" class="active">Sci-Comm</a>
+       <a href="Contact.html">Publications</a>
+   </div>
+   </header>
+
+    <div class="permaBox top-intro-box">
+        <h1>Science Communcation</h1>
     </div>
 
-    <!--header image-->
- 
-
     <!--specific topic tabs-->
-    <div class="tabs">
+    <div class="tabs" id="tabs">
         <button class="tablink" type="button" onclick="TabFlipper(event,'Youtube')"> Youtube </button>
-        <button class="tablink" type="button" onclick="TabFlipper(event,'LITC')"> 'Life in the City' Blog </button>\
-        <button class="tablink" type="button" onclick="TabFlipper(event,'WildPhoto')"> Wildlife Photography </button>
+        <button class="tablink" type="button" onclick="TabFlipper(event,'LITC')"> Freelance Writing </button>
+        <button class="tablink" type="button" onclick="TabFlipper(event,'WildPhoto')">Photography </button>
     </div>
 
     <!--tab contents-->
-    <div id="Youtube" class = "tabcontent">
-        <h3>dumpy queer</h3>
-        <p>thirst trap thot</p>
+    <div class="row">
+        <div id="Youtube" class = "tabcontent">
+            <h3>Luciferase Productions</h3>
+            <p>I run a youtube channel which foucses on the intersction between ecological and social issues,
+                focused on urban environments.</p>
+            <a href="https://www.youtube.com/@LuciferaseProductions">Channel Page</a>
+        </div>
+        <div id="YoutubeImage" class="tabimages">
+            <iframe width="800" height="600" src="https://www.youtube.com/watch?v=obHtOIJrwh8" style="margin: 1rem;"></iframe>
+        </div>
+    
+        <div id="LITC" class = "tabcontent">
+            <h3>'Life in the City' Blog</h3>
+            <p>I began writing for this blog while working with Dr. Kristin Winchell, and have been a recurring writer ever since. 
+                My writing focuses on uncovering interesting urban wildlife and highlighting interesting papers in urban evolutionary ecology 
+            </p>
+        </div>
+        <div id="LITCImage" class="tabimages">
+            <div class="articlePreview">
+                <h3>Sample Articles: </h3>
+                <a href="https://urbanevolution-litc.com/2023/02/07/sub-urban-observations-turkey-vulture/">(Sub) Urban Observations: Turkey Vulture</a>
+                <a href="https://urbanevolution-litc.com/2023/10/12/urban-observations-northern-cardinal-eating-a-spotted-lanternfly/"> Urban Observations: Northern Cardinal eating a Spotted Lanternfly? </a>
+                <a href="https://urbanevolution-litc.com/2022/12/30/modelling-the-spread-of-the-invasive-spotted-lanternfly/">Modelling the spread of the invasive Spotted Lanternfly</a>
+            </div>
+        </div>
+    
+        <div id="WildPhoto" class = "tabcontent">
+            <h3>Wildlife Photography</h3>
+            <p>since 2021, I have been documenting the beauty of nature, from bugs to birds, 
+                I am captivated by the sheer diversity of different lifeforms in our planet.</p>
+        </div>
     </div>
+    <div class="row">
 
-    <div id="LITC" class = "tabcontent">
-        <h3>oh look a squirrel</h3>
-        <p>bark bark bark</p>
     </div>
-
-    <div id="WildPhoto" class = "tabcontent">
-        <h3>birbs galore</h3>
-        <p>nya~</p>
-    </div>
+    
 </html>
 
  

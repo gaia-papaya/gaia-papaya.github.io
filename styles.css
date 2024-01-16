@@ -1,18 +1,26 @@
-.row {
-    float: left;
-    display: flex;
+.socialIcon {
+    height: 2.5rem;
+    margin: 12px;
+
 }
 
-.column {
-    flex: 33.33%;
-    padding: 10px;
+.socialIconBtn {
+    margin: 6px;
+    border: 1px solid rgb(238, 176, 247);
+    border-radius: 2rem; 
+}
+
+.socialIconBtn:hover {
+    transition: .33s;
+    background-color: #6eff8d41;
 }
 
 .topimage  {
-    display: none;
+    border-radius: 1rem;
+    display: block;
     position: relative;
-    top: 0%;
-    max-height: 600px;
+    max-height: 500px;
+    padding: 5px;
     z-index: 0;
     animation-name: appear;
     animation-duration: .75s;
@@ -25,11 +33,38 @@
 }
 
 .headshot {
-    max-height: 25%;
-    align-self: center;
+    height: 24rem;
     position: relative;
-    left: 666px;
-    max-width: 500px;
+    display: block;
+    border-radius: 1rem;
+}
+
+
+.row {
+    float: left;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: left;
+}
+
+
+hr {
+    width: 50%;
+    height: 1px;
+    margin: auto;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    color: rgb(238, 176, 247);
+}
+
+h1 {
+    font-size: 68px;
+    margin: 12px;
+}
+
+h2 {
+    font-size: 45px;
+    margin: 6px 12px;
 }
 
 /* tab headers*/
@@ -45,41 +80,64 @@
 
 
 p {
-    
-    float: left;
+    margin: 5px;
     background-color: inherit;
     border-color: inherit;
     text-align: center;
     font-size: 24px;
-    padding: 10px 10px;
+    padding: 5px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+
+
 .permaBox {
-    display: block;
-    float: left;
+    grid-row: content;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 0;
     text-align: center;
-    width: 66.6%;
-    overflow: hidden;
+    grid-column: auto;
     color: rgb(238, 176, 247);
+    padding:12px;
+}
+
+.top-intro-box {
+    margin-top: 7.5%;
+}
+
+.aboutMe {
+    display: flex;
+    flex-flow: row nowrap;
     border: 1px solid #6eff8d;
-    background-color: #011405;
-    padding: 12px;
-    position: relative;
+    background-color: rgba(1, 24, 6, 1);
+    margin-right: 6rem;
+    margin-left: 6rem;
+    border-radius: 1rem;
+    margin-bottom:1rem;
 }
 
 #PubRecord {
 margin-top: 2.5%;
 }
 
+.topbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 5;
+}
+
 /* navigation bar*/
 .topnav {
+    display: flex;
+    flex-wrap: wrap;
     background-color: rgba(1, 24, 6, 0.966);
-    float: left;
+    padding: 12px 24px;
     width: 100%;
     overflow: hidden;
     position: relative;
-    z-index: 1;
 }
 
 
@@ -87,7 +145,8 @@ margin-top: 2.5%;
     float: left;
     display: block;
     text-align: center;
-    padding: 27px 33.3px;
+    margin: 5px 2.5px;
+    padding: inherit;
     font-size: 28px;
     color: rgb(238, 176, 247);
     text-decoration: none;
@@ -97,7 +156,8 @@ margin-top: 2.5%;
 .topnav a.active {
     background-color: rgb(28, 3, 32);
     color: #6eff8d;
-    border-radius: 33.3%;
+    border-radius: 66.6%;
+    border: 1px solid #6eff8d;
 }
 
 .topnav a:hover {
@@ -105,15 +165,15 @@ margin-top: 2.5%;
     text-align: center;
     background-color: #6eff8d;
     color: #011405;
-    transition: 0.45s;
-    border-radius: 66.6%;
+    transition: 0.66s;
+    border-radius: 100%;
 }
 
 /*  topic tabs */
 .tabs {
     clear: left;
     text-align: center;
-    padding-left: 12px;
+    margin-top: 2.5%;
     float: left;
     overflow: hidden;
     position: relative;
@@ -125,13 +185,15 @@ margin-top: 2.5%;
 .tabs button {
     border-top-right-radius: 33.3%;
     border-top-left-radius: 33.3%;
+    border: none;
+    margin-right: 2px;
     min-height: 50%;
     float: left;
     display: block;
     text-align: center;
-    font-size: 28px;
+    font-size: 24px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 12px 22px;
+    padding: 12px 16px;
     background-color: #6eff8d;
     color: #011405;
     transition: 0.333s;
@@ -143,7 +205,7 @@ margin-top: 2.5%;
     background-color: rgba(1, 24, 6, 1);
     color: rgb(238, 176, 247);
     border: 1px solid #6eff8d;
-    border-bottom-color: #011405;
+    border-bottom: none;
 }
 
 .tabs button:hover {
@@ -159,17 +221,38 @@ margin-top: 2.5%;
 .tabcontent {
     clear: left;
     position: relative;
+    flex: 2;
     float: left;
-    width: 66.6%;
-    z-index: 2;
+    z-index: 2 2 2;
     display: none;
     overflow: hidden;
-    padding: 12px;
     color: rgb(238, 176, 247);
     border: 1px solid #6eff8d;
-    background-color: #011405;
+    border-top: none;
+    background-color: rgba(1, 24, 6, 1);
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    flex-flow: column wrap;
 
 }
+
+.tabimages {
+    clear: left;
+    display: none;
+    flex: 1 1 1;
+    flex-flow: column wrap;
+}
+
+ .articlePreview {
+    display: flex;
+    flex-flow: column wrap;
+    color: rgb(238, 176, 247);
+    padding:12px;
+    border: 1px solid #6eff8d;
+    background-color: rgba(1, 24, 6, 1);
+    border-radius: 1rem;
+    margin: 2rem;
+ }
 
 html {
     background-color: rgb(12, 12, 12);

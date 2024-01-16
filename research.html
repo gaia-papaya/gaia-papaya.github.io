@@ -4,69 +4,59 @@
         <script src="movingparts.js"></script>
      </head>
     
-    <!--top navigation bar-->
-    <div class="topnav">
-        <a href="index.html" >About Me</a>
-        <a href="research.html" class="active"> Research Interests</a>
-        <a href="SciComm.html"> Science Communication</a>
-        <a href="Contact.html"> Contact</a>
-    </div>
+     <header class="topbar">
+        <!--top navigation bar-->
+   <div class="topnav">
+       <a href="index.html">About Me</a>
+       <a href="research.html" class="active">Research</a>
+       <a href="SciComm.html">Sci-Comm</a>
+       <a href="Contact.html">Publications</a>
+   </div>
+   </header>
 
-<!--header images-->
-<div class="row">
-<div class="column">
-    <img id="BugsImageLeft" class="topimage" src="EasternEyedClickBeetle.jpg" alt="a click beetle with two eye-like spots on its thorax perched upside down on a leaf">
-</div>
-<div class="column">
-    <img id="BugsImageRight" class="topimage" src="AsianLadyBeetle.jpg" alt="a red and black spotted lady beetle sitting on a leaf">
 </div>
 
-<div class="column">
-    
-</div>
-
+<div class="permaBox top-intro-box">
+    <h1>General Research Interests</h1>
 </div>
 
     <!--specific topic tabs-->
-    <div class="tabs">
-        <button class="tablink" type="button" onclick="TabFlipper(event,'Bugs')"> Bugs </button>
+    <div class="tabs" id="tabs">
+        <button class="tablink" type="button" onclick="TabFlipper(event,'Bugs')"> Arthropods </button>
         <button class="tablink" type="button" onclick="TabFlipper(event,'ThermalEcol')"> Thermal Ecology </button>
         <button class="tablink" type="button" onclick="TabFlipper(event,'UrbanEcosys')"> Urban Ecosystems </button>
         <button class="tablink" type="button" onclick="TabFlipper(event,'EcoInfo')"> Eco-Informatics </button>
 
     </div>
-    
 
+    <div class="row">
+            <!--tab contents-->
+        <div id="Bugs" class = "tabcontent">
+            <h2>Arthropod Biology</h2>
+            <p>UwU</p>
+        </div>
+        <div id="BugsImage" class="tabimages">
+            <img class="topimage" src="AsianLadyBeetle.jpg" alt="a red and black spotted lady beetle sitting on a leaf">
+            <img class="topimage" src="EasternEyedClickBeetle.jpg" alt="a click beetle with two eye-like spots on its thorax perched upside down on a leaf">
+        </div>
+            
+        <div id="ThermalEcol" class = "tabcontent">
+            <h2>Hot n Sweaty</h2>
+            <p>~ooh yeaahh </p>
+        </div>
 
-    <!--tab contents-->
-    <div id="Bugs" class = "tabcontent">
-        <h3>creepy crawlies!</h3>
-        <p>aaaaagh! scaaarryyyy!
-        </p>
-    </div>
+        <div id="UrbanEcosys" class = "tabcontent">
+            <h2>Life in the City</h2>
+            <p>Neww yoooooork</p>
+        </div>
 
-    <div id="ThermalEcol" class = "tabcontent">
-        <h3>Hot n Sweaty</h3>
-        <p>~ooh yeaahh </p>
-    </div>
-
-    <div id="UrbanEcosys" class = "tabcontent">
-        <h3>Life in the City</h3>
-        <p>Neww yoooooork</p>
-    </div>
-
-    <div id="EcoInfo" class = "tabcontent">
-        <h3>beep boop</h3>
-        <p>hello world! 10010 00101 </p>
-    </div>
-
-    
-
-    <!--publication box-->
-    <div id="PubRecord" class="permaBox">
-        <h3>Publication Highlights:</h3>
-        <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10547671/">Starvation reduces thermal limits of the widespread copepod <i>Acartia tonsa</i></a>
-
-    </div>
+        <div id="EcoInfo" class = "tabcontent">
+            <h2>beep boop</h2>
+            <p>hello world! 10010 00101 </p>
+        </div>
+     </div>
+    <div class="row">
         
+    </div>        
+
 </html>
