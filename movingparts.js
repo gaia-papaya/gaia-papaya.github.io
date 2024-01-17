@@ -36,5 +36,15 @@ function TabFlipper(event, TabName) {
 
 }
 
-
+//hide navbar when user scrolls down, show when scrolls up
+var PreviousScrollPos = window.scrollY;
+window.onscroll = function() {
+    CurrentScrollPos = window.scrollY;
+    if(CurrentScrollPos < PreviousScrollPos) {
+        document.getElementById("topbar").style.top = "0";
+    } else {
+        document.getElementById("topbar").style.top = "-5rem";
+    }
+    PreviousScrollPos = CurrentScrollPos;
+}
 

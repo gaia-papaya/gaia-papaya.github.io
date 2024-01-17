@@ -21,11 +21,12 @@
     position: relative;
     padding: 5px;
     z-index: 0;
-    width: 95%;
+    width: 45%;
     animation-name: spinny;
     animation-duration: .75s;
     animation-timing-function: ease-out;
 }
+
 
 @keyframes spinny {
     from {transform: rotateX(450deg); opacity: 0%;}
@@ -74,7 +75,7 @@ h2 {
     background-color: inherit;
     text-align: center;
     font-size: 32px;
-    padding: 10px 10px;
+    padding: 5px 5px;
     border-color: inherit;
 }
 
@@ -94,6 +95,7 @@ p {
     grid-row: content;
     display: flex;
     flex-flow: column nowrap;
+    overflow: hidden;
     gap: 0;
     text-align: center;
     grid-column: auto;
@@ -113,26 +115,35 @@ p {
     margin-right: 6rem;
     margin-left: 6rem;
     border-radius: 1rem;
-    margin-bottom:1rem;
+    margin-bottom:2.5rem;
+}
+
+.aboutMe a:link{
+    color: #6eff8d;
+}
+
+.aboutMe a:visited {
+    color: #d0ffda;
 }
 
 #PubRecord {
 margin-top: 2.5%;
 }
 
-.topbar {
+#topbar {
     position: fixed;
     top: 0;
     right: 0;
     left: 0;
     z-index: 5;
+    transition: top .3s;
 }
 
 /* navigation bar*/
 .topnav {
     display: flex;
     flex-wrap: wrap;
-    background-color: rgba(1, 24, 6, 0.966);
+    background-color: rgba(1, 24, 6, 0.9);
     padding: 12px 24px;
     width: 100%;
     overflow: hidden;
@@ -223,7 +234,6 @@ margin-top: 2.5%;
     z-index: 2;
     display: none;
     overflow: hidden;
-    color: rgb(238, 176, 247);
     border: 1px solid #6eff8d;
     border-top: none;
     background-color: rgba(1, 24, 6, 1);
@@ -246,9 +256,9 @@ margin-top: 2.5%;
 .tabimages {
     clear: left;
     display: none;
-    flex-flow: column wrap;
+    flex-flow: row wrap;
     overflow: hidden;
-    flex: .5;
+    flex: 1;
 }
 
  .articlePreview {
@@ -262,8 +272,17 @@ margin-top: 2.5%;
     margin: 2rem;
  }
 
+ .articlePreview a:link{
+    color: #6eff8d;
+}
+
+.articlePreview a:visited {
+    color: #d0ffda;
+}
+
 html {
     background-color: rgb(12, 12, 12);
+    color: rgb(238, 176, 247);
     font-family: 'Courier New', Courier, monospace;
 }
 
