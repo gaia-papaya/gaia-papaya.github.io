@@ -19,21 +19,21 @@ function TabFlipper(event, TabName) {
     }
 
     //extract width of the tabs
-    var tabs = document.getElementById("tabs");
-    var tabStyles = window.getComputedStyle(tabs);
-    var tabWidth = tabStyles.width;
+     tabs = document.getElementById("tabs");
+     tabStyles = window.getComputedStyle(tabs);
+     tabWidth = tabStyles.width;
 
     // Show the current tab content and images, and add an "active" class to the button that opened the tab
     document.getElementById(TabName).style.display = "flex";
     event.currentTarget.className += " active";
     //set max and min width to fit tabs
-    document.getElementById(TabName).style.minWidth = tabWidth; 
     document.getElementById(TabName).style.maxWidth = tabWidth;
 
     //display images
     TabImageName = TabName + "Image"
     document.getElementById(TabImageName).style.display = "flex"
- 
+
+
 }
 
 

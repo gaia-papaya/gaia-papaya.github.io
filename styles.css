@@ -19,15 +19,15 @@
     border-radius: 1rem;
     display: block;
     position: relative;
-    max-height: 500px;
     padding: 5px;
     z-index: 0;
-    animation-name: appear;
+    width: 95%;
+    animation-name: spinny;
     animation-duration: .75s;
     animation-timing-function: ease-out;
 }
 
-@keyframes appear {
+@keyframes spinny {
     from {transform: rotateX(450deg); opacity: 0%;}
     to {transform: rotateX(0deg); opacity: 100%;}
 }
@@ -43,8 +43,9 @@
 .row {
     float: left;
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: row nowrap;
     justify-content: left;
+    width: 98%;
 }
 
 
@@ -75,7 +76,6 @@ h2 {
     font-size: 32px;
     padding: 10px 10px;
     border-color: inherit;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 
@@ -86,7 +86,6 @@ p {
     text-align: center;
     font-size: 24px;
     padding: 5px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 
@@ -150,7 +149,6 @@ margin-top: 2.5%;
     font-size: 28px;
     color: rgb(238, 176, 247);
     text-decoration: none;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .topnav a.active {
@@ -191,8 +189,7 @@ margin-top: 2.5%;
     float: left;
     display: block;
     text-align: center;
-    font-size: 24px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 28px;
     padding: 12px 16px;
     background-color: #6eff8d;
     color: #011405;
@@ -221,9 +218,9 @@ margin-top: 2.5%;
 .tabcontent {
     clear: left;
     position: relative;
-    flex: 2;
     float: left;
-    z-index: 2 2 2;
+    flex: 2;
+    z-index: 2;
     display: none;
     overflow: hidden;
     color: rgb(238, 176, 247);
@@ -233,14 +230,25 @@ margin-top: 2.5%;
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
     flex-flow: column wrap;
-
+    animation-name: slideDown;
+    animation-duration: .75s;
+    animation-fill-mode:backwards;
+    animation-timing-function: ease-out;
 }
+
+@keyframes slideDown {
+    from {max-height: 0;}
+    to{max-height: 25rem;}
+}
+
+
 
 .tabimages {
     clear: left;
     display: none;
-    flex: 1 1 1;
     flex-flow: column wrap;
+    overflow: hidden;
+    flex: .5;
 }
 
  .articlePreview {
@@ -256,5 +264,6 @@ margin-top: 2.5%;
 
 html {
     background-color: rgb(12, 12, 12);
+    font-family: 'Courier New', Courier, monospace;
 }
 
