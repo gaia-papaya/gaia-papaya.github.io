@@ -1,18 +1,68 @@
 /* constants */
 :root{
     /*background colors */
-    --background-light: #dbdabc;
-    --background-dark: #57605b;
+    --background-light: #eeeee5;
+    --background-light-accent: #cecca3;
+    --background-light-highlight: #ddda8d;
+
+    --background-dark: #0f1110;
+    --background-dark-accent: #1f2823;
+    --background-dark-highlight: #355644;
 
     /*text colors */
     --main-text-light: #324d3e;
+    --clicked-link-light: #4d2458;
+
     --main-text-dark: #c1decc;
 
     /*fonts */
     --main-font-fam:  'Open Sans', sans-serif;
     --header-font-fam: 'URW Gothic', serif;
 
-    --main-font-size: 12px;
-
 }
 
+/*entire document*/
+html{
+    background-color: var(--background-light);
+}
+
+/*Floating Top Navigation Bar*/
+#topbar {
+    position: fixed;
+    top: 12px;
+    right: 0;
+    left: 0;
+    z-index: 5;
+    transition: top .3s;
+    
+}
+
+.topnav{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    background-image: linear-gradient(to right, var(--background-light-accent), var(--background-light));
+}
+
+.topnav a {
+    font-size: 25px;
+    font-family: var(--header-font-fam);
+    text-align: center;
+    float:inline-start;
+    display:block;
+    padding: 50px 25px;
+
+    color: var(--main-text-light);
+
+}
+.topnav a.active {
+    color: var(--clicked-link-light);
+    background-image: linear-gradient(to right,var(--background-light-highlight), var(--background-light-accent));
+}
+
+topnav a:hover {
+    background-color: var(--background-light-highlight);
+    transition: 0.66s;
+}
