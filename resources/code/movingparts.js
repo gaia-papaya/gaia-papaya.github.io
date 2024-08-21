@@ -43,7 +43,7 @@ window.onscroll = function() {
     if(CurrentScrollPos < PreviousScrollPos) {
         document.getElementById("topbar").style.top = "0";
     } else {
-        document.getElementById("topbar").style.top = "-5rem";
+        document.getElementById("topbar").style.top = "-150px";
     }
     PreviousScrollPos = CurrentScrollPos;
 }

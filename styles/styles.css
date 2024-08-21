@@ -24,6 +24,18 @@
 /*entire document*/
 html{
     background-color: var(--background-light);
+   
+}
+
+/*content divs*/
+.banner {
+    float: right; 
+    width: 500px;
+    height: 100%;
+    padding: 0%;
+    margin: 12px 0px;
+    border: 0%;
+    background-color: magenta;
 }
 
 /*Floating Top Navigation Bar*/
@@ -43,26 +55,33 @@ html{
     width: 100%;
     overflow: hidden;
     position: relative;
-    background-image: linear-gradient(to right, var(--background-light-accent), var(--background-light));
+    background-image: linear-gradient(to right, var(--background-light-accent) 33.3%, var(--background-light) 66.6%);
 }
 
 .topnav a {
-    font-size: 25px;
-    font-family: var(--header-font-fam);
     text-align: center;
+    text-decoration-line: none ;
+    
     float:inline-start;
     display:block;
     padding: 50px 25px;
 
+    font-size: 25px;
+    font-family: var(--header-font-fam);
+    
     color: var(--main-text-light);
 
 }
 .topnav a.active {
+    font-weight: 800;
     color: var(--clicked-link-light);
-    background-image: linear-gradient(to right,var(--background-light-highlight), var(--background-light-accent));
+    background-color: var(--background-light);
+   
 }
 
-topnav a:hover {
-    background-color: var(--background-light-highlight);
-    transition: 0.66s;
+.topnav a:hover {
+    transition:  .75s ease-in-out;
+    color: var(--clicked-link-light);
+    background-color: var(--background-light);
+    
 }
