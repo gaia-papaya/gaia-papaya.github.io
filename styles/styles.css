@@ -23,19 +23,54 @@
 
 /*entire document*/
 html{
-    background-color: var(--background-light);
+    background-color: var(--background-dark);
+    border: 0px;
    
+}
+
+/*text*/
+/*main title*/
+.nameHeader{
+  margin: 600px 25px 2px 25px;
+
+  font-family: var(--header-font-fam); 
+  font-size: 75px;
+  text-shadow: 10px 5px 5px var(--background-dark);
+
+  color: var(--main-text-dark);
+}
+
+h3{
+    margin: 25px;
+    font-size: 35px;
+   font-family: var(--header-font-fam);
+   color: var(--main-text-light); 
 }
 
 /*content divs*/
 .banner {
-    float: right; 
-    width: 500px;
-    height: 100%;
-    padding: 0%;
-    margin: 12px 0px;
-    border: 0%;
-    background-color: magenta;
+    float:none;
+    overflow-x: hidden; 
+    width: 100%;
+    height: 1000px;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+
+    background-image: url("/resources/images/indexImages/Butterfly.jpg" );
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+ 
+    margin-bottom: 0px;
+}
+
+.parrDiv{
+    display: flex;
+    position: relative;
+    background-color: var(--background-light-accent);
+    margin-top: -50px;
+
 }
 
 /*Floating Top Navigation Bar*/
@@ -55,7 +90,7 @@ html{
     width: 100%;
     overflow: hidden;
     position: relative;
-    background-image: linear-gradient(to right, var(--background-light-accent) 33.3%, var(--background-light) 66.6%);
+    background-image: linear-gradient(to right, var(--background-dark-accent), rgba(0, 0, 0, 0.1));
 }
 
 .topnav a {
@@ -66,10 +101,10 @@ html{
     display:block;
     padding: 50px 25px;
 
-    font-size: 25px;
+    font-size: 30px;
     font-family: var(--header-font-fam);
     
-    color: var(--main-text-light);
+    color: var(--main-text-dark);
 
 }
 .topnav a.active {
@@ -80,8 +115,35 @@ html{
 }
 
 .topnav a:hover {
-    transition:  .75s ease-in-out;
+    transition:  .66s ease-in-out;
     color: var(--clicked-link-light);
     background-color: var(--background-light);
     
+}
+
+/*social icons*/
+.row {
+    float: left;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: left;
+    padding: 0px 0px 0px 135px ;
+    width: 98%;
+}
+
+
+.socialIcon {
+
+    height: 80px;
+    margin: 12px;
+
+}
+.socialIconBtn {
+    margin: 6px;
+    border-radius: 2rem; 
+}
+
+.socialIconBtn:hover {
+    transition: .33s;
+    filter: invert();
 }
