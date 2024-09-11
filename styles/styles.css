@@ -1,7 +1,7 @@
 /* constants */
 :root{
     /*background colors */
-    --background-light: #eeeee5;
+    --background-light: #e4e4d2;
     --background-light-accent: #cecca3;
     --background-light-highlight: #ddda8d;
 
@@ -47,6 +47,13 @@ h3{
    color: var(--main-text-light); 
 }
 
+.mainText {
+    padding: 12px 25px;
+    font-family:  var(--main-font-fam);
+    color: var(--main-text-light);
+    font-size: 20px;
+}
+
 /*content divs*/
 .banner {
     float:none;
@@ -68,7 +75,7 @@ h3{
 .parrDiv{
     display: flex;
     position: relative;
-    background-color: var(--background-light-accent);
+    background-color: var(--background-light);
     margin-top: -50px;
 
 }
@@ -76,7 +83,7 @@ h3{
 /*Floating Top Navigation Bar*/
 #topbar {
     position: fixed;
-    top: 12px;
+    top: 0px;
     right: 0;
     left: 0;
     z-index: 5;
@@ -99,7 +106,7 @@ h3{
     
     float:inline-start;
     display:block;
-    padding: 50px 25px;
+    padding: 35px 25px;
 
     font-size: 30px;
     font-family: var(--header-font-fam);
