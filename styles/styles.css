@@ -40,18 +40,32 @@ html{
   color: var(--main-text-dark);
 }
 
+
 h3{
-    margin: 25px;
-    font-size: 35px;
+    margin: 24px;
+    font-size: 45px;
    font-family: var(--header-font-fam);
    color: var(--main-text-light); 
 }
 
+h4{
+    margin: 5px;
+    font-size: 25px;
+    font-family: var(--header-font-fam);
+   color: var(--main-text-light); 
+   text-decoration: underline;
+}
+
 .mainText {
-    padding: 12px 25px;
+    padding: 25px 12px;
+    margin: 25px 12px;
     font-family:  var(--main-font-fam);
     color: var(--main-text-light);
     font-size: 20px;
+}
+
+#Reference{
+    margin: 20px 400px;
 }
 
 /*content divs*/
@@ -72,12 +86,71 @@ h3{
     margin-bottom: 0px;
 }
 
+#research{
+    height: 600px;
+    background-image: url("/resources/images/Research/scraps.jpg");
+}
+
+#pubs{
+    background-image: url("/resources/images/Pubs/butterfly2.jpg");
+    height: 600px;
+}
+
+.rug {
+    float:none;
+    overflow-x: hidden; 
+    width: 100%;
+    height: 500px;
+    padding: 0px;
+    margin: 0px;
+    border: 0px;
+    align-content: end;
+
+    background-image: url("/resources/images/indexImages/Fly.jpg" );
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+ 
+    margin-bottom: 0px;
+}
+
+#research_middle{
+    background-image: url("/resources/images/Research/greenLady.jpg");
+    height: 400px;
+}
+
+#research_almost{
+    background-image: url("/resources/images/Research/birdhouse.jpg");
+    height: 400px;
+}
+#res_rug {
+    background-image: url("/resources/images/Research/goldfinch.jpg");
+    
+}
+
+#pub_rug{
+    background-image: url("/resources/images/Pubs/heron.jpg");
+}
+
 .parrDiv{
+    align-items: center;
+    float:inline-start;
     display: flex;
     position: relative;
     background-color: var(--background-light);
     margin-top: -50px;
+    padding-left: 25px;
+    padding-right: 25px;
+    overflow-x: hidden;
 
+}
+
+.innerBox{
+    float:inline-end;
+    display: flex;
+    position: static;
+    text-align: center;
+    margin: 100px 75px;
 }
 
 /*Floating Top Navigation Bar*/
@@ -90,6 +163,60 @@ h3{
     transition: top .3s;
     
 }
+
+.SlideShowCont{
+    display: flex;
+    max-width: 500px;
+  position: relative;
+  margin: auto;
+  align-items: center;
+
+}
+
+.mySlides1, .mySlides2 {display: none}
+
+#SlideOne{
+    display: block;
+}
+
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 15px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+
+
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
 
 .topnav{
     display: flex;
@@ -134,7 +261,7 @@ h3{
     display: flex;
     flex-flow: row nowrap;
     justify-content: left;
-    padding: 0px 0px 0px 135px ;
+    padding: 20px ;
     width: 98%;
 }
 
