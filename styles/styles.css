@@ -12,6 +12,7 @@
     /*text colors */
     --main-text-light: #324d3e;
     --clicked-link-light: #4d2458;
+    --clicked-link-dark: #d59ce4;
 
     --main-text-dark: #c1decc;
 
@@ -57,8 +58,8 @@ h4{
 }
 
 .mainText {
-    padding: 25px 12px;
-    margin: 25px 12px;
+    padding: 12px;
+    margin: 15px 10px;
     font-family:  var(--main-font-fam);
     color: var(--main-text-light);
     font-size: 20px;
@@ -165,6 +166,8 @@ background-image: url("/resources/images/sciCommImages/clicky.jpg");
 
 .innerBox{
     float:inline-end;
+
+    flex-direction: column;
     display: flex;
     position: static;
     text-align: center;
@@ -268,6 +271,31 @@ background-image: url("/resources/images/sciCommImages/clicky.jpg");
 
 }
 
+.textButton{
+    text-align: center;
+    text-decoration-line: none ;
+    border: 5px solid var(--background-dark-accent);
+    border-radius: 25px;
+    align-self: center;
+    max-width: fit-content;
+    
+    display:block;
+    padding: 20px;
+    margin: 25px 10px;
+
+    font-size: 30px;
+    font-family: var(--header-font-fam);
+    
+    color: var(--main-text-light);
+}
+
+
+.textButton:hover{
+    transition:  .33s ease-in-out;
+    color: var(--clicked-link-dark);
+    background-color: var(--background-dark-accent);
+    
+}
 
 
 .topnav a.active {
@@ -319,7 +347,6 @@ background-image: url("/resources/images/sciCommImages/clicky.jpg");
 
 .socialIconBtn:hover {
     transition: .33s;
-    filter: invert();
 }
 
 .socialIconBtn#bar {
