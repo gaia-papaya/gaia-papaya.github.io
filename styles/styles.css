@@ -35,7 +35,7 @@
 html{
     background-color: var(--background-darker);
     border: 0px;
-   
+   overflow-x: hidden;
 }
 
 /*text*/
@@ -59,7 +59,7 @@ hr{
 
 h2{
     margin: 24px;
-    font-size: 55px;
+    font-size: 3vw;
    font-family: var(--header-font-fam);
    flex-grow: 5;
    color: var(--main-text-dark); 
@@ -69,14 +69,14 @@ h2{
 h3{
     margin-top: 20px;
      margin-bottom: 20px;
-    font-size: 42px;
+    font-size: 1.75vw;
    font-family: var(--header-font-fam);
    color: var(--main-text-dark); 
 }
 
 h4{
     margin: 25px;
-    font-size: 22px;
+    font-size: 2vw;
     font-family: var(--header-font-fam);
    color: var(--main-text-dark); 
 }
@@ -88,9 +88,10 @@ h4{
     font-size: 20px;
 }
 .caption{
+    min-width: 100%;
     font-family:  var(--main-font-fam);
     color: inherit;
-    font-size: 16px;
+    font-size: 1vw;
     align-self:flex-start;
     margin: 12px;
 
@@ -150,6 +151,7 @@ h4{
 }
 
 .main-content{
+    
     text-align: center;
     background-color: var(--background-dark);
     justify-content: center;
@@ -161,6 +163,7 @@ h4{
 }
 
 .parrDiv{
+    
     margin: 1%;
 display:flex;
 flex-wrap: wrap;
@@ -486,6 +489,8 @@ background-position: center;
 
 
   /*Floating Top Navigation Bar*/
+
+
 #topbar {
     position: fixed;
     top: 0px;
@@ -497,13 +502,18 @@ background-position: center;
 }
 .topnav{
     display:flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     width: 100%;
     overflow: hidden;
     position: relative;
     background-color: rgba(0, 0, 0, 0.55);
     justify-content: space-between;
+}
+
+.topnav #bar{
+    display: none;
+    flex-direction: column;
 }
 
 .topnav a {
@@ -515,14 +525,21 @@ background-position: center;
     display:flex;
     padding: 22px 25px;
 
-    font-size: 22px;
+    font-size: 1.65vw;
     font-family: var(--header-font-fam);
     
     color: var(--main-text-dark);
 
 }
 
-
+.topnav a.icon{
+    width: 2.2vw;
+  display: flexbox;
+  position: fixed;
+  right: 0;
+  top: 0;
+  background-image: "/resources/images/hamborgir.png";
+}
 
 .topnav a.active {
     font-weight: 800;
@@ -546,17 +563,17 @@ background-position: center;
 
 /*social icons*/
 .row {
-    float:inline-start;
+    width: fit-content;
+    float:right;
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: column;
     justify-content: space-between;
 }
 
-.row#bar{
+.row #bar{
     padding: unset;
     flex-flow: row;
     width: unset;
-
     justify-content: space-between;
 }
 

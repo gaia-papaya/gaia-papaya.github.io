@@ -71,3 +71,12 @@ function showSlides(n, no) {
   }
   x[slideIndex[no]-1].style.display = "block";
 } 
+
+function myFunction() {
+  var x = document.getElementById("bar");
+  if (x.style.display === "flex") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "flex";
+  }
+} 
