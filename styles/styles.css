@@ -59,7 +59,7 @@ hr{
 
 h2{
     margin: 24px;
-    font-size: 3vw;
+    font-size: 7vh;
    font-family: var(--header-font-fam);
    flex-grow: 5;
    color: var(--main-text-dark); 
@@ -69,14 +69,14 @@ h2{
 h3{
     margin-top: 20px;
      margin-bottom: 20px;
-    font-size: 1.75vw;
+    font-size: 5vh;
    font-family: var(--header-font-fam);
    color: var(--main-text-dark); 
 }
 
 h4{
     margin: 25px;
-    font-size: 2vw;
+    font-size: 3%;
     font-family: var(--header-font-fam);
    color: var(--main-text-dark); 
 }
@@ -88,10 +88,10 @@ h4{
     font-size: 20px;
 }
 .caption{
-    min-width: 100%;
+    min-width: 50%;
     font-family:  var(--main-font-fam);
     color: inherit;
-    font-size: 1vw;
+    font-size: 2.5vh;
     align-self:flex-start;
     margin: 12px;
 
@@ -272,7 +272,7 @@ grid-row: span 1;
 
 .Clementines{ 
     aspect-ratio: 4032/3024;
-    max-height: 30vw;
+    max-height: 60vh;
     width: 40vw;         
     background-image: url("/resources/images/portfolio/clems.jpg");
 background-size:cover;
@@ -281,8 +281,7 @@ background-position: center;
 }
 
 .Bridge{
-    aspect-ratio: 3432/2861;
-    max-height: 30vw;
+    max-height:60vh;
     max-width: 40vw;
     background-image: url("/resources/images/portfolio/bridge.jpg");
 background-size:cover;
@@ -292,7 +291,7 @@ background-position: center;
 
 .martini{
     aspect-ratio: 2823/2906;
-    max-height: 30vw;
+    max-height: 60vh;
     max-width: 40vw;
 background-image: url("/resources/images/portfolio/tini.jpg");
 background-size:cover;
@@ -302,7 +301,7 @@ background-position: center;
 
 .flames{
     aspect-ratio: 3024/4032;
-    max-height: 30vw;
+    max-height: 60vh;
     max-width: 40vw;
 background-image: url("/resources/images/portfolio/fire.jpg");
 background-size:cover;
@@ -312,7 +311,7 @@ background-position: center;
 
 .one{
     aspect-ratio: 3608/2840;
-    max-height: 30vw;
+    max-height: 60vh;
     max-width: 40vw;
 background-image: url("/resources/images/portfolio/sunset trees.jpg");
 background-size:cover;
@@ -323,7 +322,7 @@ background-position: center;
 }
 
 .aurora{
-    max-height: 30vw;
+    max-height: 60vh;
     max-width: 40vw;
     background-image: url("/resources/images/portfolio/northern lights.jpg");
 background-size:cover;
@@ -333,7 +332,7 @@ background-position: center;
 }
 
 .two{
-    max-height: 30vw;
+    max-height: 60vh;
     max-width: 40vw;
     aspect-ratio: 3227/2546 ;
         background-image: url("/resources/images/portfolio/la femme en rose.jpg");
@@ -342,7 +341,7 @@ background-position: center;
  background-repeat:no-repeat ;
 }
 .three{
-    max-height: 30vw;
+    max-height: 60vh;
     max-width: 40vw;
     aspect-ratio: 3861/2877;
         background-image: url("/resources/images/portfolio/simon.jpg");
@@ -351,7 +350,7 @@ background-position: center;
  background-repeat:no-repeat ;
 }
 .uno{
-    max-height: 30vw;
+    max-height: 60vh;
     max-width: 40vw;
     aspect-ratio:3024/3828 ;
     background-image: url("/resources/images/portfolio/self.jpg");
@@ -360,7 +359,7 @@ background-position: center;
  background-repeat:no-repeat ;
 }
 .une{
-    max-height: 30vw;
+    max-height: 60vh;
     max-width: 40vw;
     aspect-ratio: 2718/2714;
     background-image: url("/resources/images/portfolio/painting 1.jpg");
@@ -369,7 +368,7 @@ background-position: center;
  background-repeat:no-repeat ;
 }
 .four{
-    max-height: 30vw;
+    max-height: 60vh;
     max-width: 40vw;
     aspect-ratio: 3024/4032;
     background-image: url("/resources/images/portfolio/mask.jpg");
@@ -380,7 +379,7 @@ background-position: center;
 
 .five{
     aspect-ratio: 3024/4032;
-    max-height: 30vw;
+    max-height: 60vh;
     max-width: 40vw;
     background-image: url("/resources/images/portfolio/wolf daughter (1).jpg");
     background-size:cover;
@@ -390,7 +389,7 @@ background-position: center;
 
 .printOne{
     aspect-ratio: 2557/3239;
-    max-height: 30vw;
+    max-height: 60vh;
     max-width: 40vw;
     background-image: url("/resources/images/portfolio/hand.jpg");
     background-size:cover;
@@ -400,7 +399,7 @@ background-position: center;
 
 .printTwo{
     aspect-ratio: 4041/3027 ;
-    max-height: 30vw;
+    max-height: 60vh;
     max-width: 40vw;
     background-image: url("/resources/images/portfolio/angel.jpg");
     background-size:cover;
@@ -410,7 +409,7 @@ background-position: center;
 
 .printThree{
     aspect-ratio: 2221/2811 ;
-    max-height: 30vw;
+    max-height: 60vh;
     max-width: 40vw;
     background-image: url("/resources/images/portfolio/print statur.jpg");
     background-size:cover;
@@ -420,7 +419,7 @@ background-position: center;
 
 .printFour{
     aspect-ratio: 2992/2102;
-    max-height: 30vw;
+    max-height: 60vh;
     max-width: 40vw;
     background-image: url("/resources/images/portfolio/division.jpg");
     background-size:cover;
@@ -504,7 +503,7 @@ background-position: center;
     display:flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 100%;
+    width: 100cw;
     overflow: hidden;
     position: relative;
     background-color: rgba(0, 0, 0, 0.55);
@@ -525,7 +524,7 @@ background-position: center;
     display:flex;
     padding: 22px 25px;
 
-    font-size: 1.65vw;
+    font-size: 3vh;
     font-family: var(--header-font-fam);
     
     color: var(--main-text-dark);
@@ -569,6 +568,8 @@ background-position: center;
     flex-flow: column;
     justify-content: space-between;
 }
+
+
 
 .row #bar{
     padding: unset;
