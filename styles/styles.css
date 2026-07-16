@@ -481,6 +481,7 @@ background-position: center;
 
 
 #topbar {
+    width: 100vw;
     position: fixed;
     top: 0vh;
     right: 0;
@@ -494,7 +495,7 @@ background-position: center;
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
-    overflow: hidden;
+    overflow:hidden;
     position: relative;
     background-color: rgba(0, 0, 0, 0.55);
     justify-content: start;
