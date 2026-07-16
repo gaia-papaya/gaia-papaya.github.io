@@ -53,12 +53,12 @@ html{
 hr{
     border-color: var(--background-light-highlight);
     width: 75%;
-    margin-top: 25;
-    margin-bottom: 45px;
+    margin-top: 5vh;
+    margin-bottom: 3vh;
 }
 
 h2{
-    margin: 24px;
+    margin: 3vh;
     font-size: 7vh;
    font-family: var(--header-font-fam);
    flex-grow: 5;
@@ -67,15 +67,14 @@ h2{
 
 
 h3{
-    margin-top: 20px;
-     margin-bottom: 20px;
+    margin: 3vh;
     font-size: 5vh;
    font-family: var(--header-font-fam);
    color: var(--main-text-dark); 
 }
 
 h4{
-    margin: 25px;
+    margin: 3vh;
     font-size: 3%;
     font-family: var(--header-font-fam);
    color: var(--main-text-dark); 
@@ -93,19 +92,20 @@ h4{
     color: inherit;
     font-size: 2.5vh;
     align-self:flex-start;
-    margin: 12px;
+    margin: 2vh;
 
    
 
 }
 
 .emailLink{
-    font-size: 18px;
+    font-size: 3vw;
     color: var(--main-text-dark);
     text-decoration: none;
-    padding: 6px;
+    padding: .8vh;
     background-color: var(--background-dark-accent);
     border-radius: 4px;
+    margin-bottom: 3vh;
 }
 .emailLink:hover{
     color: var(--main-text-dark-active);
@@ -119,15 +119,10 @@ h4{
     overflow-x:visible; 
     width: 100vw;
     height: 7.5vh;
-    padding: 0px;
-    margin: 0px;
-    border: 0px;
     background-color:var(--background-darker);
     background-size:cover;
     background-position: center;
     background-repeat: no-repeat;
- 
-    margin-bottom: 0px;
 }
 
 
@@ -135,19 +130,14 @@ h4{
 .rug {
     float:none;
     overflow-x: hidden; 
-    width: 100vww;
+    width: 100vw;
     height: 10vh;
-    padding: 0px;
-    margin: 0px;
-    border: 0px;
     align-content: end;
 
      background-color: var(--background-darker);
     background-size:cover;
     background-position: center;
     background-repeat: no-repeat;
- 
-    margin-bottom: 0px;
 }
 
 .main-content{
@@ -164,7 +154,7 @@ h4{
 
 .parrDiv{
     
-    margin: 1%;
+    margin: 2.5vh;
 display:flex;
 flex-wrap: wrap;
 justify-content: space-evenly;
