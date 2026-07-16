@@ -146,10 +146,9 @@ h4{
     background-color: var(--background-dark);
     justify-content: center;
     padding: 2% 4.5% 3.5%;
-    flex: 1 1 80%;
 
-     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, .6);
-     border-radius: 50px;
+     box-shadow: 0 4vh 8vh 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, .6);
+     border-radius: 5vh;
 }
 
 .parrDiv{
@@ -160,7 +159,7 @@ flex-wrap: wrap;
 justify-content: space-evenly;
 grid-template-rows: repeat(10, minmax( 15vw, 1fr));
 grid-template-columns: repeat(auto-fill, minmax(15vw, 1fr));
-gap: 10px;
+gap: 2.5vw;
 overflow:visible;
  
 &.short{
@@ -206,6 +205,7 @@ grid-template-rows: repeat(9, minmax( 15vw, 1fr));
 .innerBox{
     
     height: fit-content;
+    width: fit-content;
     background: rgba(0, 0, 0, 0.7);
     color: rgba(0, 0, 0, 0);
     display: flex;
