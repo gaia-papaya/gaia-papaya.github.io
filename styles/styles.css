@@ -118,7 +118,7 @@ h4{
     float:none;
     overflow-x:visible; 
     width: 100vw;
-    height: 7.5vh;
+    height: 20vh;
     background-color:var(--background-darker);
     background-size:cover;
     background-position: center;
@@ -482,7 +482,7 @@ background-position: center;
 
 #topbar {
     position: fixed;
-    top: 0px;
+    top: 0vh;
     right: 0;
     left: 0;
     z-index: 5;
@@ -491,13 +491,13 @@ background-position: center;
 }
 .topnav{
     display:flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
-    width: 100cw;
+    width: 100%;
     overflow: hidden;
     position: relative;
     background-color: rgba(0, 0, 0, 0.55);
-    justify-content: space-between;
+    justify-content: start;
 }
 
 .topnav #bar{
@@ -510,9 +510,9 @@ background-position: center;
     align-items: center;
     text-decoration-line: none ;
     
-    float:inline-end;
+    float:inline-start;
     display:flex;
-    padding: 22px 25px;
+    padding: 1.5vh 4vw;
 
     font-size: 3vh;
     font-family: var(--header-font-fam);
@@ -522,11 +522,11 @@ background-position: center;
 }
 
 .topnav a.icon{
-    width: 2.2vw;
+    width: 2vw;
   display: flexbox;
-  position: fixed;
-  right: 0;
-  top: 0;
+  flex-grow: 1;
+
+  position: relative;
   background-image: "/resources/images/hamborgir.png";
 }
 
@@ -545,7 +545,7 @@ background-position: center;
 }
 
 .topnav img{
-    height: 50px;
+    height: 8vh;
 }
 
 
@@ -555,7 +555,7 @@ background-position: center;
     width: fit-content;
     float:right;
     display: flex;
-    flex-flow: column;
+    flex-flow: row;
     justify-content: space-between;
 }
 
